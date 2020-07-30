@@ -27,7 +27,7 @@ func grade(score int) string {
 }
 
 func readFile() {
-	const filename = "abc.txt"
+	const filename = "F:\\go_projects\\src\\imooc.com\\xiangnan\\learngo\\basic\\branch\\abc.txt"
 	contents, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println(err)
@@ -42,7 +42,7 @@ func readFile() {
 }
 
 func main() {
-	//readFile()
+	readFile()
 	fmt.Println(
 		grade(0),
 		grade(45),

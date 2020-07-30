@@ -36,8 +36,8 @@ func variableShorter() {
 }
 
 func euler() {
-	fmt.Println(cmplx.Pow(math.E, 1i * math.Pi) + 1)
-	fmt.Printf("%.3f\n", cmplx.Exp(1i * math.Pi) + 1)
+	fmt.Println(cmplx.Pow(math.E, 1i*math.Pi) + 1)
+	fmt.Printf("%.3f\n", cmplx.Exp(1i*math.Pi)+1)
 }
 
 func triangle() {
@@ -50,10 +50,10 @@ func triangle() {
 func consts() {
 	const (
 		filename = "a.mp4"
-		a, b = 3, 4
+		a, b     = 3, 4
 	)
 	var c int
-	c = int(math.Sqrt(a*a + b * b))
+	c = int(math.Sqrt(a*a + b*b))
 	fmt.Println(filename, c)
 }
 

@@ -33,5 +33,5 @@ func main() {
 		convertToBin(13), // 1101
 		convertToBin(1345435),
 	)
-	printFile("abc.txt")
+	printFile("F:\\go_projects\\src\\imooc.com\\xiangnan\\learngo\\basic\\branch\\abc.txt")
 }
