@@ -7,7 +7,8 @@ func initialArray() {
 	var arr1 [5]int
 	arr2 := [3]int{1, 5, 8}
 	arr3 := [...]int{2, 5, 7, 8, 0} //  编译器决定数组长度
-	var grid [4][5]int              // 二维数组
+	fmt.Printf("len(arr3)=%d, cap(arr3)=%d\n", len(arr3), cap(arr3))
+	var grid [4][5]int // 二维数组
 	fmt.Println(arr1, arr2, arr3)
 	fmt.Println(grid)
 	// 数值遍历
