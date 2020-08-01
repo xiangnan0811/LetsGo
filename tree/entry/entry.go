@@ -40,10 +40,10 @@ func main() {
 	root.Left = &tree.Node{}
 	root.Right = &tree.Node{Value: 5}
 	root.Right.Left = new(tree.Node)
-	root.Right.Right = tree.CreateNode(2)
+	root.Left.Right = tree.CreateNode(2)
 	root.Right.Left.SetValue(4)
 
-	root.Traverse()
+	root.Traverse() // 遍历
 	fmt.Println()
 
 	// 值接收者 vs 指针接收者
@@ -56,4 +56,11 @@ func main() {
 	fmt.Println()
 
 	testSparse()
+
+	// Go语言闭包的应用：为函数实现接口
+	nodeCount := 0
+	root.TraverseFunc(func(node *tree.Node) {
+		nodeCount++
+	})
+	fmt.Println("Node count:", nodeCount)
 }
